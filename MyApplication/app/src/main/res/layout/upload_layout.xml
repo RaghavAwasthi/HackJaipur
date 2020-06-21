@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="154dp"
+        android:layout_height="32dp"
+        android:text="VIDEO NAME"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/userdeatail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="video name"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/text_loc"
+        android:layout_width="156dp"
+        android:layout_height="32dp"
+        android:text="VIDEO DESCRIPTION"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/userloc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="video description" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="CHOOSE FILE" />
+
+    <Button
+        android:id="@+id/mchoose_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose File" />
+
+    <ImageView
+        android:id="@+id/thumbnail_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:padding="4dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPLOAD FILE" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPLOAD FILE" />
+
+</LinearLayout>

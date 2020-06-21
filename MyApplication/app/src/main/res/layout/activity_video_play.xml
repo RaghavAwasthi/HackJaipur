@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="title name"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:text="Description"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/upload_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:text="Date"
+        android:textColor="@color/black"
+        android:textStyle="italic" />
+
+
+
+
+</LinearLayout>

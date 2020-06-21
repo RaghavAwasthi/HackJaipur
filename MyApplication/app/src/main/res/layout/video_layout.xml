@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <VideoView
+        android:id="@+id/vdview"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="title name" />
+
+    <TextView
+        android:id="@+id/creator_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="creator name" />
+
+    <EditText
+        android:id="@+id/upload_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description" />
+
+
+</LinearLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/holder">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/employee_image"
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:layout_gravity="center"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/ic_person" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/employee_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingEnd="0dp"
+                    android:paddingRight="0dp"
+                    android:text=". . . . . . ."
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginTop="1dp"
+                            android:src="@drawable/ic_email_blue"
+                            android:tint="@color/colorAccent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/employeeEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:text=". . . . . . . . ."
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginLeft="45dp"
+                        android:text="Email" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/darker_gray" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginTop="1dp"
+                            android:src="@drawable/ic_security"
+                            android:tint="@color/colorAccent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/employeelevel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="0"
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginLeft="45dp"
+                        android:text="Contributions Done" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/darker_gray" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginTop="1dp"
+                            android:src="@drawable/ic_phone"
+                            android:tint="@color/colorAccent" />
+
+                        <TextView
+                            android:id="@+id/employeeMobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="XXXXXXXXXX"
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginLeft="45dp"
+                        android:text="Mobile Number" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/darker_gray" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginTop="1dp"
+                            android:src="@drawable/ic_date"
+                            android:tint="@color/colorAccent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/employeeAge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="0"
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginLeft="45dp"
+                        android:text="Age" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/darker_gray" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </ScrollView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</FrameLayout>

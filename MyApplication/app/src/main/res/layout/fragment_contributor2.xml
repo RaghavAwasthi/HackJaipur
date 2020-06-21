@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contribute.ContributeFragment">
+    <TextView
+        android:id="@+id/tmp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:text="OH NO You haven't made any contributions!!!!"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutAnimation="@anim/layout_animation_fall_down"/>
+
+
+</FrameLayout>

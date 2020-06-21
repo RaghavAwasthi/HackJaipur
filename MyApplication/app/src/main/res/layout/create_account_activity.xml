@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="138dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/imageView"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AGE"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/userage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="UserAge" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADDRESS"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/userAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="UserAddress" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CITY"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/userCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="UserCity" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONTACT NUMBER"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/userContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="UserContact" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="State"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/user_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter State"
+            android:inputType="text" />
+
+
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#3f76ff"
+            android:text="SIGN UP"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

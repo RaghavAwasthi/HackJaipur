@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="161dp"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_details"
+                android:layout_width="68dp"
+                android:layout_height="wrap_content"
+                android:text="DETAILS"
+                android:textColor="@color/darkColorPrimaryDark" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/foodDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="FoodDetails"
+                android:inputType="textMultiLine" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="LOCATION"
+                android:textColor="@color/darkColorPrimaryDark" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/userloc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CurrentLocation" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="TYPE"
+                android:textColor="@color/darkColorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_liq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Liquid Material" />
+
+                <RadioButton
+                    android:id="@+id/radio_dry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Dry Material" />
+
+                <RadioButton
+                    android:id="@+id/radio_mix"
+                    android:layout_width="101dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Mixture" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="UPLOAD IMAGE**"
+                android:textColor="@color/darkColorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPLOAD" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="CONTACT NUMBER"
+                android:textColor="@color/darkColorPrimaryDark" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/userContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="UserContact"
+                android:inputType="number" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#3f76ff"
+                android:text="SUBMIT"
+                android:textColor="#fff" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="** Please make sure that photo you send includes
+               (1) The code sent on your mentioned number hand-written on a clean sheet of paper,followed by your name with current date and time. " />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/my_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="image" />
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>
